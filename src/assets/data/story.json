@@ -1,0 +1,25 @@
+{
+  "story": [
+    {
+      "id": "debut",
+      "url": "debut.mp4",
+      "link": ["debutChoix"]
+    },
+    {
+      "url": "test02.mp4",
+      "id": "debutChoix",
+      "url": "debutChoix.mp4",
+      "link": ["dessousSexy", "dessousCasual"]
+    },
+    {
+      "id": "dessousCasual",
+      "url": "dessousCasual.mp4",
+      "link": ["debutChoix"]
+    },
+    {
+      "id": "dessousSexy",
+      "url": "dessousSexy.mp4",
+      "link": ["debutChoix"]
+    }
+  ]
+}

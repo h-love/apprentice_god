@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import theHomePage from '@/components/views/theHomePage'
+import theMoviePage from '@/components/views/theMoviePage'
+import theChoicePage from '@/components/views/theChoicePage'
 
 Vue.use(Router)
 
@@ -8,8 +10,18 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'theHomePage',
+      component: theHomePage
+    },
+    {
+      path: '/emission/:id',
+      name: 'theMoviePage',
+      component: theMoviePage
+    },
+    {
+      path: '/emission/choix/:id',
+      name: 'theChoicePage',
+      component: theChoicePage
     }
   ]
 })
