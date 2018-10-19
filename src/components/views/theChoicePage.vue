@@ -14,7 +14,8 @@ export default {
   data () {
     return {
       videoPath: '',
-      step: ''
+      step: '',
+      interval: ''
     }
   },
   created () {
@@ -25,6 +26,13 @@ export default {
     window.addEventListener('resize', this.handleResize, false)
     this.setBtnHeight(this.$refs.linkLeft.$el)
     this.setBtnHeight(this.$refs.linkRight.$el)
+    this.interval = setInterval(() => {
+      let duration = this.$refs.video.duration
+      let currentTime = this.$refs.video.currentTime
+      if (currentTime >= duration) {
+        this.$router.push(`/emission/choix/${this.step.linkDefault}`)
+      }
+    }, 1000)
   },
   methods: {
     handleResize () {
@@ -41,6 +49,9 @@ export default {
       this.step = json.story.find(item => item.id === this.$route.params.id)
       this.videoPath = require(`../../assets/videos/${this.step.url}`)
     }
+  },
+  destroyed () {
+    clearInterval(this.interval)
   }
 }
 </script>
