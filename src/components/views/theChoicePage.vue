@@ -30,7 +30,7 @@ export default {
       let duration = this.$refs.video.duration
       let currentTime = this.$refs.video.currentTime
       if (currentTime >= duration) {
-        this.$router.push(`/emission/choix/${this.step.linkDefault}`)
+        this.$router.push(`/emission/${this.step.linkDefault}`)
       }
     }, 1000)
   },
