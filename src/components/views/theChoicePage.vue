@@ -23,6 +23,7 @@ export default {
     this.videoPath = require(`../../assets/videos/${this.step.url}`)
   },
   mounted () {
+    this.$refs.video.play()
     window.addEventListener('resize', this.handleResize, false)
     this.setBtnHeight(this.$refs.linkLeft.$el)
     this.setBtnHeight(this.$refs.linkRight.$el)

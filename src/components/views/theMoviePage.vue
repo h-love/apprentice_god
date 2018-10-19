@@ -21,6 +21,7 @@ export default {
     this.videoPath = require(`../../assets/videos/${this.step.url}`)
   },
   mounted () {
+    this.$refs.video.play()
     this.interval = setInterval(() => {
       let duration = this.$refs.video.duration
       let currentTime = this.$refs.video.currentTime
