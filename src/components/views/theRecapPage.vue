@@ -1,7 +1,7 @@
 <template>
   <div class="theRecapPage c-recap">
-    <div class="grid-container">
-      <div class="grid-x align-center o-section__paddingBottomForNav">
+    <div class="grid-container o-section__paddingBottomForNav">
+      <div class="grid-x align-center">
         <div class="cell small-12">
           <h1 class="c-recap__title">Recapitulatif</h1>
         </div>
@@ -47,6 +47,9 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="flex-container align-center">
+        <router-link class="c-recap__btn" to="/emission/debut">Rejouer</router-link>
       </div>
     </div>
     <nav-main />
