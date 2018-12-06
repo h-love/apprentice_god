@@ -1,0 +1,51 @@
+.p-switchCandidates
+  &__img
+    display: block
+    margin: 0 auto
+    max-width: 200px
+
+    +bp-small
+      width: 100%
+
+  &__txt
+    color: $white
+    font-family: $font-primary
+    padding: 20px
+    border: 1px solid $pink
+    margin-bottom: 20px
+
+    &.active
+      border-color: $blue
+
+    &__title
+      text-align: center
+
+      +bp-small
+        font-size: 20px
+
+  &__switch
+    position: relative
+    width: 60px
+    height: 20px
+    border: 1px solid $pink
+    margin: 0 auto
+    border-radius: 20px
+
+    &.active
+      border-color: $blue
+
+    &__circle
+      position: absolute
+      left: 2px
+      top: 50%
+      height: 15px
+      width: 15px
+      border: 1px solid $pink
+      border-radius: 100%
+      transform: translateY(-50%)
+
+      &.active
+        border-color: $blue
+        left: auto
+        right: 2px
+

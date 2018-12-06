@@ -1,0 +1,59 @@
+.c-navMain
+  position: fixed
+  z-index: 1000
+  bottom: 0
+  left: 50%
+  transform: translateX(-50%)
+  font-family: $font-primary
+  text-transform: uppercase
+  font-size: 20px
+  cursor: pointer
+  background-color: $purple
+  padding: 10px 0
+  width: 100vw
+
+  &__element
+    $parent: &
+    list-style-type: none
+    margin: 0 10px
+    padding: 20px
+    border: 1px solid rgba(0, 0, 0, 0)
+    text-align: center
+    text-decoration: none
+    color: $white
+    transition: border .2s ease-out, color .2s ease-out
+    white-space: nowrap
+
+    +bp-small
+      font-size: 14px
+      padding: 5px
+      margin: 0 1px
+
+    &.active
+      border: 1px solid $blue
+      color: $blue
+
+      #{$parent}__svg
+        stroke: $blue-light
+
+
+    &:hover
+      border: 1px solid $blue
+      color: $blue
+
+      #{$parent}__svg
+        stroke: $blue-light
+
+    &__image
+      width: 40px
+      height: 40px
+      margin-bottom: 10px
+
+      +bp-small
+        width: 25px
+        height: 25px
+
+    &__svg
+      transition: stroke .2s ease-out
+
+    

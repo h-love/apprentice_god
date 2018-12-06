@@ -1,0 +1,64 @@
+{
+  "candidates": [
+    {
+      "imageFiction": "static/images/candidats/fredFiction.png",
+      "nameFiction": "La présentatrice",
+      "ageFiction": "30 ans",
+      "descriptionFiction": "texte à définir",
+      "imageReel": "static/images/candidats/fredReel.png",
+      "nameReel": "Fred Cassassus",
+      "descriptionReel": "texte à définir",
+      "mail": "test[at]test.fr"
+    },
+    {
+      "imageFiction": "static/images/candidats/annaFiction.png",
+      "nameFiction": "Anna Kyotis",
+      "ageFiction": "25 ans",
+      "descriptionFiction": "texte à définir",
+      "imageReel": "static/images/candidats/annaReel.png",
+      "nameReel": "Margot-Marie Ménéguz",
+      "descriptionReel": "texte à définir",
+      "mail": "test[at]test.fr"
+    },
+    {
+      "imageFiction": "static/images/candidats/zackFiction.png",
+      "nameFiction": "Jérémy",
+      "ageFiction": "28 ans",
+      "descriptionFiction": "texte à définir",
+      "imageReel": "static/images/candidats/zackReel.png",
+      "nameReel": "Zac Andianas",
+      "descriptionReel": "texte à définir",
+      "mail": "test[at]test.fr"
+    },
+    {
+      "imageFiction": "static/images/candidats/marcFiction.png",
+      "nameFiction": "Marc",
+      "ageFiction": "30 ans",
+      "descriptionFiction": "texte à définir",
+      "imageReel": "static/images/candidats/marcReel.png",
+      "nameReel": "Brice Tripard",
+      "descriptionReel": "texte à définir",
+      "mail": "test[at]test.fr"
+    },
+    {
+      "imageFiction": "static/images/candidats/lucyFiction.png",
+      "nameFiction": "Lucy",
+      "ageFiction": "26 ans",
+      "descriptionFiction": "texte à définir",
+      "imageReel": "static/images/candidats/lucyReel.png",
+      "nameReel": "Madeleine Besançon",
+      "descriptionReel": "texte à définir",
+      "mail": "test[at]test.fr"
+    },
+    {
+      "imageFiction": "static/images/candidats/samanthaFiction.png",
+      "nameFiction": "Samantha",
+      "ageFiction": "30 ans",
+      "descriptionFiction": "texte à définir",
+      "imageReel": "static/images/candidats/samanthaReel.png",
+      "nameReel": "Léna Mée",
+      "descriptionReel": "texte à définir",
+      "mail": "test[at]test.fr"
+    }
+  ]
+}

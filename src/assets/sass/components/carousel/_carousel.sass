@@ -1,0 +1,25 @@
+.p-carousel
+  position: relative
+
+  &__next,
+  &__prev
+    position: absolute
+    z-index: 100
+    background-color: $white-alpha
+    height: 100%
+    padding: 0 10px
+
+    +bp-small
+      display: none !important
+
+  &__next
+    right: 0
+    top: 0
+    transform: rotate(180deg)
+
+  +bp-small
+    .owl-stage-outer
+      margin: 0 -40px
+
+    .owl-stage
+      margin: 0 40px

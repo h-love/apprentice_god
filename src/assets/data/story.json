@@ -8,18 +8,36 @@
     {
       "id": "debutChoix",
       "url": "debutChoix.mp4",
+      "answers": ["dessous sexy", "dessous casual"],
       "link": ["dessousSexy", "dessousCasual"],
       "linkDefault": "dessousSexy"
     },
     {
       "id": "dessousCasual",
       "url": "dessousCasual.mp4",
-      "link": ["debutChoix"]
+      "link": ["debutChoix2"]
     },
     {
       "id": "dessousSexy",
       "url": "dessousSexy.mp4",
-      "link": ["debutChoix"]
+      "link": ["debutChoix2"]
+    },
+    {
+      "id": "debutChoix2",
+      "url": "debutChoix.mp4",
+      "answers": ["dessous sexy", "dessous casual"],
+      "link": ["dessousSexy2", "dessousCasual2"],
+      "linkDefault": "dessousSexy2"
+    },
+    {
+      "id": "dessousCasual2",
+      "url": "dessousCasual.mp4",
+      "last": true
+    },
+    {
+      "id": "dessousSexy2",
+      "url": "dessousSexy.mp4",
+      "last": true
     }
   ]
 }

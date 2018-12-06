@@ -1,8 +1,23 @@
 .c-btn
+  display: block
+  margin: 0 auto
+  text-align: center
   background-color: black
   color: white
   cursor: pointer
   padding: 10px 25px
+  width: 200px
+  font-family: $font-primary
+  text-transform: uppercase
+  text-decoration: none
+  border: 1px solid $white
+  background-color: rgba(0, 0, 0, 0)
+  font-size: 20px
+  transition: background-color .2s ease-out, color .2s ease-out
+
+  &:hover
+    background-color: $white
+    color: $purple
 
   &--nextStep
     position: absolute
