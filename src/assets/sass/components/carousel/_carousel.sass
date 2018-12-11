@@ -1,18 +1,24 @@
 .p-carousel
   position: relative
 
+  &--ctt
+    height: calc(100vh - 140px + 50px)
+
   &__next,
   &__prev
+    color: $white
     position: absolute
     z-index: 100
-    background-color: $white-alpha
     height: 100%
-    padding: 0 10px
+    padding: 0 20px 0 2px
 
     +bp-small
       display: none !important
 
+  &__prev
+    background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%)
   &__next
+    background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%)
     right: 0
     top: 0
     transform: rotate(180deg)

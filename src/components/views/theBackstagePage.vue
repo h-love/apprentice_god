@@ -1,10 +1,10 @@
 <template>
   <div class="theBackstagePage o-section__100vh">
     <nav-main />
-    <div class="grid-container o-section__paddingBottomForNav">
-      <div class="grid-x align-center">
-        <div class="cell medium-7 small-8">
-          <h1>Les coulisses</h1>
+    <div class="grid-container">
+      <div class="grid-x align-center align-middle">
+        <h1 class="u-positionAbsolute u-top0">Les coulisses</h1>
+        <div class="cell medium-7 small-8 flex-container flex-dir-column align-center p-carousel--ctt">
           <carousel
             class="p-carousel"
             :dots="false"

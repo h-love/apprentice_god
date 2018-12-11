@@ -4,8 +4,22 @@
     <div class="p-switchCandidates__txt" ref="txt">
       <h2 v-if="!active" class="p-switchCandidates__txt__title u-noMargin">{{fictionalName}} - {{fictionalAge}}</h2>
       <h2 v-else class="p-switchCandidates__txt__title u-noMargin">{{realityName}}</h2>
-      <p v-if="!active" class="p-switchCandidates__txt__description">{{fictionalDescription}}</p>
-      <p v-else class="p-switchCandidates__txt__description">{{realityDescription}}</p>
+      <p
+        v-if="!active"
+        class="p-switchCandidates__txt__description"
+        v-for="(paragraph, index) in fictionalDescription"
+        :key="index"
+      >
+        {{paragraph}}
+      </p>
+      <p
+        v-if="active"
+        class="p-switchCandidates__txt__description"
+        v-for="(paragraph, index) in realityDescription"
+        :key="index"
+      >
+        {{paragraph}}
+      </p>
     </div>
     <div class="p-switchCandidates__switch u-clickable" ref="switch" @click="toggleSwitch()">
       <div class="p-switchCandidates__switch__circle" ref="circle">
